@@ -97,16 +97,7 @@ Measured via Grad-CAM overlap:
 
 ---
 
-## 🧑‍💻 Authors
 
-* **Simer Khurmi**, IGDTUW – [simer.live@gmail.com](mailto:simer.live@gmail.com)
-* **Naincy Yadav**, IGDTUW
-* **Prisha Sharma**, IGDTUW
-* **Vidushi Arora**, IGDTUW
-* **Surbhi Bharti**, IGDTUW
-* **Dr. Ashwini Kumar**, IGDTUW
-
----
 
 ## 📄 License
 
@@ -116,105 +107,9 @@ This repository is released under the [MIT License](LICENSE).
 
 ---
 
-### ✅ **2. Springer-LaTeX Style Adaptation (`HTHTA-ViT++`)**
 
-Use this if you're aligning it with your **Springer/Nature manuscript** format:
 
-```markdown
-# 📚 HTHTA-ViT++: A Hierarchical Transformer-GRU Attention Framework for Interpretable and Efficient Vision Classification
 
-> 🧬 **A Springer-ready ViT-based deep learning model combining token sequence modeling (BiGRU), interpretable attention pooling, and hierarchical fusion for high-accuracy classification.**
 
----
 
-## 🔎 Abstract
 
-HTHTA-ViT++ integrates:
-
-- **ViT + BiGRU**: Bidirectional modeling of token sequences
-- **Multi-Head Attention Pooling**: Interpretable class-region weighting
-- **CLS-token Fusion**: Adaptive local-global feature aggregation
-
-It surpasses Swin and ConvNeXt in accuracy, improves interpretability via Focused Attention Percentage (FAP), and reduces compute by 13% compared to ViT-B/16.
-
----
-
-## 🧠 Key Contributions
-
-- 📘 Outperforms DeiT, Swin, ConvNeXt on CIFAR-100 and Tiny-ImageNet
-- 📈 Boosts classification accuracy by up to **+4.3%**
-- 🔍 FAP = **78.3%** (↑ 24.6% over ViT)
-- 🧠 Attention maps aligned with salient regions (verified via user study)
-- 🛠 Includes rigorous ablation and error analysis
-
----
-
-## 📊 Performance Summary
-
-| Model         | Params | CIFAR-10 | CIFAR-100 | Tiny-ImageNet | FAP (%) |
-|---------------|--------|----------|-----------|----------------|---------|
-| ViT-B/16      | 86M    | 96.5     | 84.6      | 76.8           | 53.7    |
-| ConvNeXt-B    | 88.6M  | 98.1     | 89.2      | 82.6           | 61.2    |
-| **HTHTA-ViT++** | 99.3M | **98.7** | **93.3**  | **88.9**       | **78.3** |
-
----
-
-## 🛠 Method Overview
-
-- 🔍 **BiGRU Layer**: Captures directional token dependencies
-- 🧠 **Multi-head Attention**: Learns interpretable token importance
-- 🧬 **CLS Fusion Equation**:  
-  `cfinal = γ·cCLS + (1−γ)·cpooled + β·(cCLS ⊙ cpooled)`
-
----
-
-## 🧪 Datasets
-
-- CIFAR-10 (10 categories, 32×32)
-- CIFAR-100 (100 fine-grained classes)
-- Tiny-ImageNet (64×64, 200 classes)
-- Intel Scene Classification (224×224)
-
----
-
-## 📈 Results Snapshot (Table 1 & 2 in Paper)
-
-| Variant                        | CIFAR-100 Acc (%) |
-|-------------------------------|-------------------|
-| ViT-B/16                      | 84.6              |
-| + BiGRU                      | 88.1              |
-| + Attention Pooling          | 90.7              |
-| + CLS Fusion (HTHTA-ViT++)  | 93.3              |
-
----
-
-## 🧑‍💻 Authors
-
-- **Simer Khurmi**, IGDTUW, Delhi  
-- Co-authors: Naincy Yadav, Prisha Sharma, Vidushi Arora, Surbhi Bharti, Dr. Ashwini Kumar
-
----
-
-## 📄 Citation (BibTeX)
-
-```bibtex
-@article{khurmi2025hthtavit,
-  title={HTHTA-ViT++: An Explainable and Efficient Vision Transformer with Hierarchical GRU-Guided Token Attention},
-  author={Khurmi, Simer and Yadav, Naincy and Sharma, Prisha and Arora, Vidushi and Bharti, Surbhi and Kumar, Ashwini},
-  journal={Submitted to Springer Nature},
-  year={2025}
-}
-````
-
----
-
-## 📝 License
-
-Licensed under the [MIT License](LICENSE).
-
-```
-
----
-
-Would you like these two `README.md` files exported or formatted into a downloadable ZIP with image placeholders and `src/` directory structure?
-```
